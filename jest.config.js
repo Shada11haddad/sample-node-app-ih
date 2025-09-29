@@ -1,33 +1,19 @@
+// jest.config.js
 module.exports = {
+  collectCoverage: true,
+  coverageReporters: ["lcov", "text", "html"],
+  coverageDirectory: "coverage",
   projects: [
     {
-      displayName: 'server',
-      testEnvironment: 'node',
-      testMatch: [
-        '**/tests/server.test.js',
-        '**/tests/integration.test.js'
-      ],
-      collectCoverageFrom: [
-        'server.js',
-        '!**/node_modules/**',
-        '!**/coverage/**'
-      ],
-      coverageDirectory: 'coverage/server',
-      setupFilesAfterEnv: ['<rootDir>/tests/setup.js']
+      displayName: "server",
+      testEnvironment: "node",
+      testMatch: ["<rootDir>/tests/**/?(*.)+(server|integration).test.js"]
     },
     {
-      displayName: 'client',
-      testEnvironment: 'jsdom',
-      testMatch: [
-        '**/tests/client.test.js'
-      ],
-      collectCoverageFrom: [
-        'public/script.js',
-        '!**/node_modules/**',
-        '!**/coverage/**'
-      ],
-      coverageDirectory: 'coverage/client',
-      setupFilesAfterEnv: ['<rootDir>/tests/setup.js']
+      displayName: "client",
+      testEnvironment: "jsdom",
+      setupFiles: ["<rootDir>/tests/setup.js"],
+      testMatch: ["<rootDir>/tests/**/?(*.)+client.test.js"]
     }
   ]
 };
