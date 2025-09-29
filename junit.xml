@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="29" failures="0" errors="0" time="4.536">
+  <testsuite name="Express Server Tests" errors="0" failures="0" skipped="0" timestamp="2025-09-29T20:39:43" time="3.37" tests="15">
+    <testcase classname="Express Server Tests Static File Serving should serve static files from public directory" name="Express Server Tests Static File Serving should serve static files from public directory" time="0.09">
+    </testcase>
+    <testcase classname="Express Server Tests Static File Serving should serve CSS files" name="Express Server Tests Static File Serving should serve CSS files" time="0.018">
+    </testcase>
+    <testcase classname="Express Server Tests Static File Serving should serve JavaScript files" name="Express Server Tests Static File Serving should serve JavaScript files" time="0.016">
+    </testcase>
+    <testcase classname="Express Server Tests Health Check Endpoint should return health status" name="Express Server Tests Health Check Endpoint should return health status" time="0.046">
+    </testcase>
+    <testcase classname="Express Server Tests Health Check Endpoint should return valid timestamp format" name="Express Server Tests Health Check Endpoint should return valid timestamp format" time="0.016">
+    </testcase>
+    <testcase classname="Express Server Tests Root Route should serve index.html for root path" name="Express Server Tests Root Route should serve index.html for root path" time="0.016">
+    </testcase>
+    <testcase classname="Express Server Tests 404 Handling should return 404 for non-existent routes" name="Express Server Tests 404 Handling should return 404 for non-existent routes" time="0.028">
+    </testcase>
+    <testcase classname="Express Server Tests 404 Handling should serve 404.html for non-existent routes" name="Express Server Tests 404 Handling should serve 404.html for non-existent routes" time="0.049">
+    </testcase>
+    <testcase classname="Express Server Tests Error Handling should handle server errors gracefully" name="Express Server Tests Error Handling should handle server errors gracefully" time="0.001">
+    </testcase>
+    <testcase classname="Express Server Tests Middleware should have logging middleware" name="Express Server Tests Middleware should have logging middleware" time="0.025">
+    </testcase>
+    <testcase classname="Express Server Tests Middleware should have static file middleware" name="Express Server Tests Middleware should have static file middleware" time="0.063">
+    </testcase>
+    <testcase classname="Express Server Tests Content-Type Headers should set correct content-type for HTML files" name="Express Server Tests Content-Type Headers should set correct content-type for HTML files" time="0.025">
+    </testcase>
+    <testcase classname="Express Server Tests Content-Type Headers should set correct content-type for CSS files" name="Express Server Tests Content-Type Headers should set correct content-type for CSS files" time="0.019">
+    </testcase>
+    <testcase classname="Express Server Tests Content-Type Headers should set correct content-type for JS files" name="Express Server Tests Content-Type Headers should set correct content-type for JS files" time="0.038">
+    </testcase>
+    <testcase classname="Express Server Tests Security Headers should not expose sensitive server information" name="Express Server Tests Security Headers should not expose sensitive server information" time="0.016">
+    </testcase>
+  </testsuite>
+  <testsuite name="Integration Tests" errors="0" failures="0" skipped="0" timestamp="2025-09-29T20:39:43" time="3.516" tests="14">
+    <testcase classname="Integration Tests Full Application Flow should serve complete application with all assets" name="Integration Tests Full Application Flow should serve complete application with all assets" time="0.093">
+    </testcase>
+    <testcase classname="Integration Tests Full Application Flow should serve all static assets correctly" name="Integration Tests Full Application Flow should serve all static assets correctly" time="0.061">
+    </testcase>
+    <testcase classname="Integration Tests Full Application Flow should handle health check in production-like environment" name="Integration Tests Full Application Flow should handle health check in production-like environment" time="0.043">
+    </testcase>
+    <testcase classname="Integration Tests Error Scenarios should handle 404 errors gracefully" name="Integration Tests Error Scenarios should handle 404 errors gracefully" time="0.016">
+    </testcase>
+    <testcase classname="Integration Tests Error Scenarios should handle malformed requests" name="Integration Tests Error Scenarios should handle malformed requests" time="0.049">
+    </testcase>
+    <testcase classname="Integration Tests Content Validation should serve valid HTML" name="Integration Tests Content Validation should serve valid HTML" time="0.057">
+    </testcase>
+    <testcase classname="Integration Tests Content Validation should include all required meta tags" name="Integration Tests Content Validation should include all required meta tags" time="0.058">
+    </testcase>
+    <testcase classname="Integration Tests Content Validation should include all CSS and JS references" name="Integration Tests Content Validation should include all CSS and JS references" time="0.013">
+    </testcase>
+    <testcase classname="Integration Tests Performance Tests should respond to health check quickly" name="Integration Tests Performance Tests should respond to health check quickly" time="0.013">
+    </testcase>
+    <testcase classname="Integration Tests Performance Tests should serve static files efficiently" name="Integration Tests Performance Tests should serve static files efficiently" time="0.014">
+    </testcase>
+    <testcase classname="Integration Tests Security Tests should not expose server information in headers" name="Integration Tests Security Tests should not expose server information in headers" time="0.019">
+    </testcase>
+    <testcase classname="Integration Tests Security Tests should handle invalid requests gracefully" name="Integration Tests Security Tests should handle invalid requests gracefully" time="0.063">
+    </testcase>
+    <testcase classname="Integration Tests Concurrent Requests should handle multiple concurrent requests" name="Integration Tests Concurrent Requests should handle multiple concurrent requests" time="0.062">
+    </testcase>
+    <testcase classname="Integration Tests File System Integration should serve files that actually exist" name="Integration Tests File System Integration should serve files that actually exist" time="0.045">
+    </testcase>
+  </testsuite>
+</testsuites>
