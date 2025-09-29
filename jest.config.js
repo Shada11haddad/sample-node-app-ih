@@ -1,24 +1,9 @@
-// jest.config.js
+// jest.config.js (كونفيق واحد بسيط)
 module.exports = {
+  testEnvironment: "node",                 // الافتراضي لكل التستات
   collectCoverage: true,
   coverageReporters: ["lcov", "text", "html"],
   coverageDirectory: "coverage",
-  projects: [
-    {
-      displayName: "server",
-      testEnvironment: "node",
-      testMatch: [
-        "<rootDir>/tests/server.test.js",
-        "<rootDir>/tests/integration.test.js"
-      ]
-    },
-    {
-      displayName: "client",
-      testEnvironment: "jsdom",
-      setupFiles: ["<rootDir>/tests/setup.js"],
-      testMatch: [
-        "<rootDir>/tests/client.test.js"
-      ]
-    }
-  ]
+  testMatch: ["**/?(*.)+(spec|test).js"], // يلتقط كل ملفات *.test.js أينما كانت
+  setupFilesAfterEnv: ["<rootDir>/tests/setup.js"] // لتحميل jest-dom إلخ (لن يؤثر على node)
 };
